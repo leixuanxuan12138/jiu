@@ -3,6 +3,7 @@
     <top1></top1>
     <nav1></nav1>
     <nav2></nav2>
+    <bottom1></bottom1>
   </div>
 
 </template>
@@ -10,6 +11,7 @@
 import top1 from './components/top'
 import nav1 from './components/nav'
 import nav2 from './components/nav2'
+import bottom1 from './components/bottom'
 export default {
   data () {
     return {
@@ -19,7 +21,8 @@ export default {
   components: {
     top1,
     nav1,
-    nav2
+    nav2,
+    bottom1
   }
 }
 </script>
