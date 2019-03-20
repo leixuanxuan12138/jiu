@@ -1,32 +1,29 @@
 <template>
   <div>
     <div class="top">
-      <router-link tag = "a" to="/home"><img src="../images/back.png"></router-link>
-      <p>裸价清仓</p>
-      <img src="../images/category.png" alt @click="change">
+      <router-link tag = "a" to="/home"><img src="../img/back.png"></router-link>
+      <p>用户登录</p>
+      <img src="../img/category.png" alt @click=" change">
     </div>
     <div class="navigation" v-show="isshow">
       <ul>
         <router-link to="/home" tag="li">
-          <img src="../images/home.png" alt>
+          <img src="../img/home.png" alt>
           <p>首页</p>
         </router-link>
         <router-link to="/classify" tag="li">
-          <img src="../images/search.png" alt>
+          <img src="../img/search.png" alt>
           <p>搜索</p>
         </router-link>
         <router-link to="/buy" tag="li">
-          <img src="../images/cart.png" alt>
+          <img src="../img/cart.png" alt>
           <p>购物车</p>
         </router-link>
         <router-link to="/mine" tag="li">
-          <img src="../images/me.png" alt>
+          <img src="../img/me.png" alt>
           <p>我的酒仙</p>
         </router-link>
       </ul>
-    </div>
-    <div class="banner">
-      <img src="https://img08.jiuxian.com/bill/2018/1218/3e88122c37bc49dc96c3b120efaf4db3.jpg" alt>
     </div>
   </div>
 </template>
@@ -106,13 +103,5 @@ export default {
   display: inline-block;
   margin-left: 60px;
   padding-top: 5px;
-}
-.banner {
-  width: 100%;
-  height: 488px;
-}
-.banner > img {
-  width: 100%;
-  height: 100%;
 }
 </style>

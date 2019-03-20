@@ -13,8 +13,7 @@
 export default {
   data () {
     return {
-      isshow: true,
-      lis: []
+      isshow: true
     }
   },
   methods: {

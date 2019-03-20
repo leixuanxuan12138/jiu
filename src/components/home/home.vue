@@ -8,7 +8,7 @@
     <countTime></countTime>
     <goLeft></goLeft>
     <soMany></soMany>
-    <router-view></router-view>
+    <keep-alive><router-view></router-view></keep-alive>
     <click></click>
     <i class = "iconfont  icon-upward goTop" v-show="isshow" @click="back"></i>
   </div>
