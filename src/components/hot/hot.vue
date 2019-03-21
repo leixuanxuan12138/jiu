@@ -1,6 +1,7 @@
 <template>
   <div class="buy">
     <top1></top1>
+    <top2></top2>
     <nav1></nav1>
     <nav2></nav2>
     <bottom1></bottom1>
@@ -9,6 +10,7 @@
 </template>
 <script>
 import top1 from './components/top'
+import top2 from './components/top2'
 import nav1 from './components/nav'
 import nav2 from './components/nav2'
 import bottom1 from './components/bottom'
@@ -20,6 +22,7 @@ export default {
   },
   components: {
     top1,
+    top2,
     nav1,
     nav2,
     bottom1
