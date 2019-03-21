@@ -6,6 +6,7 @@ import classify from '@/components/classify/classify'
 import hot from '@/components/hot/hot'
 import mine from '@/components/mine/mine'
 import search from '@/components/home/children/search'
+import main from '@/components/main/main'
 Vue.use(Router)
 
 export default new Router({
@@ -40,6 +41,10 @@ export default new Router({
     {
       path: '/mine',
       component: mine
+    },
+    {
+      path: '/main',
+      component: main
     },
     {
       path: '*',

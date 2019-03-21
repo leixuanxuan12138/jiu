@@ -1,6 +1,6 @@
 <template>
   <div class = "groom">
-    <span v-for="(item,index) in imgUrl" :key="index"><img :src="item" alt=""></span>
+    <span @click="go(index)" v-for="(item,index) in imgUrl" :key="index"><img :src="item" alt=""></span>
     <img src="https://img07.jiuxian.com/bill/2019/0318/4418156f9de34e7e9ec47e43be0dff70.jpg" alt="">
     <img src="https://img07.jiuxian.com/bill/2019/0318/61f5e781d1f941a3bcdcf228cb183e1d.jpg" alt="" class = "img1">
     <img src="https://img06.jiuxian.com/bill/2019/0318/344fd5fb460c471eaf78f179e5677ac4.jpg" alt="" class = "img1">
@@ -28,7 +28,9 @@ export default {
 
   },
   methods: {
-
+    go (i) {
+      location.hash = '/main'
+    }
   }
 }
 
