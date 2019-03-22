@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <ul>
-      <li v-for="(item,index) in lis" :key="index" ref="lis" :class="{red:index===num}">{{item}}</li>
+      <li v-for="(item,index) in lis[s]" :key="index" ref="lis" :class="{red:index===num}">{{item}}</li>
     </ul>
     <div class="btm">
      <p></p>
@@ -13,9 +13,16 @@
 export default {
   data () {
     return {
-      lis: ['茅台', '五粮液', '汾酒', '泸州老窖', '酱香', '清香', '浓香', '查看全部'],
-      num: 7
+      lis: [
+        ['茅台', '五粮液', '汾酒', '泸州老窖', '酱香', '清香', '浓香', '查看全部'],
+        ['意大利', '法国', '英国', '北美', '澳大利亚', '美国', '新西兰', '查看全部']
+      ],
+      num: 7,
+      s: ''
     }
+  },
+  created () {
+    this.s = this.$route.params.id
   }
 }
 </script>

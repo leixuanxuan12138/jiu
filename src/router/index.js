@@ -7,6 +7,7 @@ import hot from '@/components/hot/hot'
 import mine from '@/components/mine/mine'
 import search from '@/components/home/children/search'
 import main from '@/components/main/main'
+import meeting from '@/components/meeting/meeting'
 Vue.use(Router)
 
 export default new Router({
@@ -43,12 +44,16 @@ export default new Router({
       component: mine
     },
     {
-      path: '/main',
+      path: '/main/:id',
       component: main
     },
     {
       path: '*',
       redirect: '/home'
+    },
+    {
+      path: '/meeting',
+      component: meeting
     }
   ]
 })

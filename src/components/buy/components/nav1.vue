@@ -21,21 +21,23 @@ export default {
     margin: 0 auto;
     background: #fff4e2;
     font-size: 0.05rem;
-
+    display: flex;
+    justify-content: start;
+    padding-left: 2%
 }
 .mark>span{
     height: 28px;
-    width: 580px;
+    width: auto;
     display: block;
     text-align: center;
     line-height: 44px;
-    float: left;
+
 }
 .mark>i{
     width:30px;
     height: 30px;
     display: inline-block;
-    float: left;
+
     margin: 10px 0 0 20px
 }
 .mark>i>img{

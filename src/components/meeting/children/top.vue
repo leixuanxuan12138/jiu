@@ -2,7 +2,7 @@
   <div>
     <div class="top">
       <router-link tag = "a" to="/home"><img src="../img/back.png"></router-link>
-      <p>{{lis[i].name}}</p>
+      <p>319开春大促</p>
       <img src="../img/category.png" alt @click=" change">
     </div>
     <div class="navigation" v-show="isshow">
@@ -29,20 +29,9 @@
 </template>
 <script>
 export default {
-  created () {
-    this.i = this.$route.params.id
-  },
   data () {
     return {
-      isshow: false,
-      lis: [
-        {
-          name: '白酒'
-        },
-        {
-          name: '葡萄酒'
-        }
-      ]
+      isshow: false
     }
   },
   methods: {
@@ -74,7 +63,7 @@ export default {
   margin: 10px 20px 0px 20px;
 }
 .top > p {
-  font-size: 36px;
+  font-size: 32px;
   color: #fff;
   line-height: 80px;
   font-weight: 200
