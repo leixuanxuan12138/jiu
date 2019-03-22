@@ -8,6 +8,8 @@ import mine from '@/components/mine/mine'
 import search from '@/components/home/children/search'
 import main from '@/components/main/main'
 import meeting from '@/components/meeting/meeting'
+import search1 from '@/components/classify/children/search.vue'
+import nowdata from '@/components/nowdata/nowdata'
 Vue.use(Router)
 
 export default new Router({
@@ -54,6 +56,14 @@ export default new Router({
     {
       path: '/meeting',
       component: meeting
+    },
+    {
+      path: '/search1',
+      component: search1
+    },
+    {
+      path: '/nowdata/:id',
+      component: nowdata
     }
   ]
 })

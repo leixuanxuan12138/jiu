@@ -109,7 +109,7 @@ export default {
 </script>
 <style scoped>
 .box{padding: 20px}
-.app{position: relative;margin-left: 10px}
+.app{position: relative;margin-left: 10px;}
 li{
   display: flex;
   padding: 20px;
@@ -118,6 +118,7 @@ li{
 img{
   width: 200px;
   height: 200px;
+  display: block
 }
 p{
 
